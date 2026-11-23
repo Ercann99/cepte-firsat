@@ -88,7 +88,8 @@ class _HomeScreenState extends State<HomeScreen> {
   final Set<int> favorites = {};
   final Set<int> alerts = {};
   String selectedMarket = 'Tümü';
-  String query = '';\n  String? selectedSpecialList;
+  String query = '';
+  String? selectedSpecialList;
 
   List<MarketProduct> get filtered => demoProducts.where((p) {
     final matchesQuery = p.name.toLowerCase().contains(query.toLowerCase()) || p.category.toLowerCase().contains(query.toLowerCase());
